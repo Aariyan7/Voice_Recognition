@@ -6,3 +6,5 @@ matplotlib
 soundfile
 pandas
 scikit-learn
+fatsapi
+uvicorn
