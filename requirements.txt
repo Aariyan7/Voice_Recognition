@@ -6,5 +6,5 @@ matplotlib
 soundfile
 pandas
 scikit-learn
-fatsapi
+fastapi
 uvicorn
