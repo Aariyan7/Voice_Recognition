@@ -31,7 +31,9 @@ async def process_data(data: Dict[str, Any] = Body(...), x_api_key: str = Header
     }
     
     return response_data
+import os
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 10000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
